@@ -2,6 +2,15 @@
 import Logo from "../assets/logo.svg";
 import "../styles/header.css";
 import "../styles/utility.css";
+import "../styles/buttons.css";
+import Close from "../assets/close.svg";
+import Menu from "../assets/menu.svg";
+import HeroRectangleOne from "../assets/images/rectangleOne.png";
+import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
+import "../styles/hero.css";
+
+import Button from "../components/Button";
+import { useState } from "react";
 
 export default function Home() {
     
@@ -10,8 +19,7 @@ export default function Home() {
     return (
         <>
             <header className="container py-sm">
-
-            </header>
+            
 
             <nav className="flex items-center justify-between">
             <img src={Logo} alt="Logo DonaFrost" width={220} height={80} />
@@ -77,7 +85,34 @@ export default function Home() {
 </div>
 
             </nav>
-            
+            </header>
+
+            <section id="hero">
+<span className="desktop-only">
+    <img src={HeroRectangleTwo} alt="Retangulo um tela inicial" />
+</span>
+<img src={HeroRectangleOne} alt="Retangulo dois tela inicial" />
+
+<div className="container content">
+    <p className="desktop-only">
+        Olá
+    </p>
+    <h1>Um vidro novo direto para seu apê, é só pedir que entregamos para você!</h1>
+    <p>Frete gratis para sul e sudeste.
+    </p>
+    <div className="flex gap-1">
+        <span><Button text="Cadastre-se" /></span>
+        <span className="desktop-only">
+            <Button text="Veja mais" secondary />
+        </span>
+    </div>
+</div>
+
+</section>
+
+
+
+
         </>
         
     )

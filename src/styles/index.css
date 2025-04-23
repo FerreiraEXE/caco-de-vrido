@@ -18,7 +18,7 @@
   --second-text-color: #737373;
   --light-text-color: #FFF;
   --light-gray: #F8F8F8;
-  --primary-color: #23A6F0;
+  --primary-color: #23A6F0; 
   --secondary-color: #B2E3FF;
 
   --ff-sans: "Montserrat", system-ui, sans-serif;
@@ -89,7 +89,7 @@ img {
   display: inline-block;
 }
 
-ul {
+li {
   list-style: none;
 }
 
