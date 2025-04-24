@@ -8,6 +8,9 @@ import Menu from "../assets/menu.svg";
 import HeroRectangleOne from "../assets/images/rectangleOne.png";
 import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
 import "../styles/hero.css";
+import Champion from "../assets/champion.svg";
+import Card from "../components/Card";
+import "../styles/solution.css";
 
 import Button from "../components/Button";
 import { useState } from "react";
@@ -107,6 +110,48 @@ export default function Home() {
         </span>
     </div>
 </div>
+
+</section>
+
+<section className="container" id="solution">
+{<header>
+    <span>
+        <h2>Soluções</h2>
+        <span className="desktop-only">
+            <h2>
+                Sob medida para você
+            </h2>
+        </span>
+    </span>
+    <p>
+        Inovação é com a gente! A <strong>DonaFrost </strong>
+        já conquistou diversos clientes, seja você mais um deles,
+        veja tudo que pode ganhar com nossos serviços.
+    </p>
+</header>}
+
+<section className="even-columns">
+    <div className="Card">
+        <Card
+            icon={Champion}
+            title="Pacote de Vidros"
+            description="Descrição lembrar de alterar de novo"/>
+    </div>
+
+    <div className="Card">
+        <Card
+            icon={Champion}
+            title="Pacote de Vidros"
+            description="Descrição lembrar de alterar de novo"/>
+    </div>
+
+    <div className="Card">
+        <Card
+            icon={Champion}
+            title="Pacote de Vidros"
+            description="Descrição lembrar de alterar de novo"/>
+    </div>
+</section>
 
 </section>
 
