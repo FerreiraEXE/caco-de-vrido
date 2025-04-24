@@ -8,8 +8,11 @@ import Menu from "../assets/menu.svg";
 import HeroRectangleOne from "../assets/images/rectangleOne.png";
 import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
 import "../styles/hero.css";
-import Champion from "../assets/champion.svg";
+//import Champion from "../assets/champion.svg";
 import Card from "../components/Card";
+import Detergente from "../assets/detergente.svg";
+import Espelho from "../assets/espelho.svg";
+import Copo from "../assets/copo.svg";
 import "../styles/solution.css";
 
 import Button from "../components/Button";
@@ -98,7 +101,7 @@ export default function Home() {
 
 <div className="container content">
     <p className="desktop-only">
-        Olá
+        Quebrou o vidro?
     </p>
     <h1>Um vidro novo direto para seu apê, é só pedir que entregamos para você!</h1>
     <p>Frete gratis para sul e sudeste.
@@ -116,40 +119,40 @@ export default function Home() {
 <section className="container" id="solution">
 {<header>
     <span>
-        <h2>Soluções</h2>
+        <h2>Vidros</h2>
         <span className="desktop-only">
             <h2>
-                Sob medida para você
+                Sob medida para sua casa
             </h2>
         </span>
     </span>
     <p>
-        Inovação é com a gente! A <strong>DonaFrost </strong>
-        já conquistou diversos clientes, seja você mais um deles,
-        veja tudo que pode ganhar com nossos serviços.
+        Falou em vidros, é com a gente! A <strong>CACO DE VRIDO </strong>
+        dês de <strong>1500</strong>, criando espelhos e trocando por terras
     </p>
+    <p>Veja um pouco do que podemos oferecer</p>
 </header>}
 
 <section className="even-columns">
     <div className="Card">
         <Card
-            icon={Champion}
-            title="Pacote de Vidros"
-            description="Descrição lembrar de alterar de novo"/>
+            icon={Detergente}
+            title="Limpeza"
+            description="Limpamos seu vidro, mesmo estando no último andar do Burj Khalifa."/>
     </div>
 
     <div className="Card">
         <Card
-            icon={Champion}
+            icon={Espelho}
             title="Pacote de Vidros"
-            description="Descrição lembrar de alterar de novo"/>
+            description="Pacotes personalizados para pessoas que gostam de casas assustadoramente espelhadas."/>
     </div>
 
     <div className="Card">
         <Card
-            icon={Champion}
-            title="Pacote de Vidros"
-            description="Descrição lembrar de alterar de novo"/>
+            icon={Copo}
+            title="COPOS!"
+            description="Também vendemos muitos copos... (Mais do que você imagina)."/>
     </div>
 </section>
 

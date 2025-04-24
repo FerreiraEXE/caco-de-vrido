@@ -55,7 +55,7 @@
   }
   .card hr {
     height: 6px;
-    background: var(--secondary-color);
+    background: #F0FFFF;
     width: 100%;
     border: none;
   }
@@ -68,4 +68,120 @@
         font-size: var(--fs-sm);
         color: var(--primary-color);
     }
+
+    .card:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 12px 32px;
+      transition: box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 12px 32px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card {
+      position: relative;
+      overflow: hidden;
+      z-index: 0;
+    }
+    
+    .card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 2px solid transparent;
+      background: linear-gradient(120deg, var(--primary-color), var(--secondary-color)) border-box;
+      mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+      -webkit-mask-composite: destination-out;
+      transition: opacity 0.3s ease;
+      opacity: 0;
+      z-index: -1;
+      border-radius: 6px;
+    }
+    
+    .card:hover::before {
+      opacity: 0.5;
+    }
+    
+    .card:hover {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.15), 0 0 40px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: rotate(0.3deg) scale(1.02);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    }
+
+    .card:hover {
+      border: 1px solid var(--primary-color);
+      box-shadow: 0 0 25px var(--primary-color), 0 0 20px var(--primary-color);
+      transition: box-shadow 0.3s ease, border 0.3s ease;
+    }
+    
+    .card .card-button-wrapper .btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.card .card-button-wrapper .btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.card-button-wrapper {
+  margin-top: auto;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(0, 191, 255, 0) 40%,       /* azul claro transparente */
+    rgba(135, 206, 250, 0.6) 50%,   /* azul céu */
+    rgba(0, 255, 255, 0) 60%        /* ciano transparente */
+  );
+  transform: rotate(25deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+.card:hover::after {
+  animation: shine-slide 1.2s ease forwards;
+  opacity: 1;
+}
+
+@keyframes shine-slide {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+
+
+    
 }

@@ -1,28 +1,32 @@
 import React from "react";
 
-interface CardProps{
-icon: string;
-title: string;
-description: string;
+
+interface CardProps {
+  icon: string;
+  title: string;
+  description: string;
 }
 
-const Card: React.FC<CardProps> = ({icon, title, description})  =>{
-    return (
-        <section className="even-columns">
-            <div className="card">
-            <span>
-            <img src={icon} alt={`icone ${title}`} width={64} height={64} />
-            </span>
+const Card: React.FC<CardProps> = ({ icon, title, description }) => {
+  return (
+    <section className="even-columns">
+      <div className="card">
+        <span>
+          <img src={icon} alt={`icone ${title}`} width={64} height={64} />
+        </span>
 
-            <div>
-            <h3>{title}</h3>
-            <p>{description}</p>
-            </div>
-            <hr />
-            </div>
+        <div>
+          <h3>{title}</h3>
+          <p>{description}</p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
 
-        </section>
-    )
-}
+        <hr />
+      </div>
+    </section>
+  );
+};
 
 export default Card;
