@@ -20,6 +20,7 @@ import { useState } from "react";
 import Star from "../assets/Star.svg";
 import StarOuter from "../assets/StarOuter.svg";
 import ProfileImageOne from "../assets/ProfileImageOne.svg";
+import PricingSection from "../components/PricingSection";
 
 export default function Home() {
     
@@ -257,6 +258,11 @@ export default function Home() {
   </section>
 </section>
 {/* até aqui */}
+
+<PricingSection></PricingSection>
+
+
+
 
         </>
         
