@@ -24,10 +24,10 @@ const PricingSection = () => {
             <p>Retire na loja</p>
           </span>
           <ul className="features">
-            <li>
+            
               <img src={Check} alt="ícone check" width={24} height={24} />
               <p>Apenas 1 por CPF</p>
-            </li>
+            
           </ul>
         </div>
 
