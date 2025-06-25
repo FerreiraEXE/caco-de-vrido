@@ -14,7 +14,7 @@ const PricingSection = () => {
         <div className="pricing-card">
           <span className="plan">
             <h3>Básico</h3>
-            <p>Você tem direito a uma prova das comidas DonaFrost.</p>
+            <p>Você não tem direito a absolutamente nada!!</p>
           </span>
           <h2>Grátis</h2>
           <Button text="Pedir agora" secondary key="free" />
@@ -38,10 +38,10 @@ const PricingSection = () => {
           </span>
           <span className="plan">
             <h3>Premium</h3>
-            <p>Para quem precisa de uma marmita diária, muito saborosa.</p>
+            <p>Você tem direito a dois espelho por mês!</p>
           </span>
           <span className="price">
-            <h2>R$ 89,90</h2>
+            <h2>R$ 501,90</h2>
             <p>/mês</p>
           </span>
           <Button text="Pedir agora" key="premium" />
@@ -52,11 +52,11 @@ const PricingSection = () => {
           </span>
           <span className="features">
             <img src={Check} alt="ícone check" width={24} height={24} />
-            <p>5 Refeições por semana</p>
+            <p>5 Reflexos por semana</p>
           </span>
           <span className="features">
             <img src={Check} alt="ícone check" width={24} height={24} />
-            <p>2 Sucos por semana</p>
+            <p>2 Sucos por semana ??? </p>
           </span>
         </div>
 

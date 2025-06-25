@@ -20,8 +20,13 @@ import { useState } from "react";
 import Star from "../assets/Star.svg";
 import StarOuter from "../assets/StarOuter.svg";
 import ProfileImageOne from "../assets/ProfileImageOne.svg";
+import ProfileImageTwo from "../assets/ProfileImageTwo.svg";
+import ProfilePictureThree from "../assets/ProfilePictureThree.svg";
+import ProfilePictureFour from "../assets/ProfilePictureFour.svg";
+import ProfilePictureFive from "../assets/ProfilePictureFive.svg";
 import PricingSection from "../components/PricingSection";
 import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 
 export default function Home() {
     
@@ -169,13 +174,12 @@ export default function Home() {
     <header>
         <span>
             <p className="desktop-only">
-                Conselho de quem conhece
+                Quem conhece sabe
             </p>
-            <h2>Cada cliente importa!</h2>
+            <h2>Não temos reembolso!!!</h2>
         </span>
         <p>
-            Quem já pediu sabe da qualidade das nossas receitas, estamos tirando aquela ideia de que
-            comida congelada tem de ser algo sem gosto, acompanhe abaixo os testemunhos de quem já comprou e aprovou.
+            Confiamos tanto em nossa qualidade de produto que não aprovamos nenhuma política de reembolso!
         </p>
     </header>
        <section className="carousel">
@@ -184,8 +188,7 @@ export default function Home() {
                 <img src={ProfileImageOne} alt="Imagem perfil cliente" />
                 <span className="testimony">
                     <p>
-                        Certamente o mercado chinês de eletricos está bombando, só existe
-                        uma coisa melhor do que isso, provar uma boa comida DonaFrost no almoço.
+                        Comprei um espelho da caco de vrido e me surpreendi ao ver apenas minha nuca.
                     </p>
                 </span>
                 <span className="rating">
@@ -196,18 +199,17 @@ export default function Home() {
                     <img src={StarOuter} alt="ícone estrela sem fundo" width={20} height={22} />
                 </span>
                 <span className="names">
-                    <p>Ellon Ma</p>
-                    <p>CEO BING CHILLING</p>
+                    <p>Mulher de costas</p>
+                    <p>Primeira cliente</p>
                 </span>
             </div>
 
 {/* daqui */}
-            <div className="carousel-card">
-                <img src={ProfileImageOne} alt="Imagem perfil cliente" />
+                        <div className="carousel-card">
+                <img src={ProfileImageTwo} alt="Imagem perfil cliente" />
                 <span className="testimony">
                     <p>
-                        Certamente o mercado chinês de eletricos está bombando, só existe
-                        uma coisa melhor do que isso, provar uma boa comida DonaFrost no almoço.
+                        Meu carro agora tem vidros da caco de vridos e estou muito contente.
                     </p>
                 </span>
                 <span className="rating">
@@ -215,13 +217,72 @@ export default function Home() {
                     <img src={Star} alt="ícone estrela" width={22} height={20} />
                     <img src={Star} alt="ícone estrela" width={22} height={20} />
                     <img src={Star} alt="ícone estrela" width={22} height={20} />
+                    <img src={Star} alt="ícone estrela" width={22} height={20} />
+                </span>
+                <span className="names">
+                    <p>Thiago</p>
+                    <p>Dono de honda civic</p>
+                </span>
+            </div>
+            <div className="carousel-card">
+                <img src={ProfilePictureThree} alt="Imagem perfil cliente" />
+                <span className="testimony">
+                    <p>
+                        Ameiiiii!!!!
+                    </p>
+                </span>
+                <span className="rating">
+                    <img src={Star} alt="ícone estrela" width={22} height={20} />
+                    <img src={StarOuter} alt="ícone estrela sem fundo" width={20} height={22} />
+                    <img src={StarOuter} alt="ícone estrela sem fundo" width={20} height={22} />
+                    <img src={StarOuter} alt="ícone estrela sem fundo" width={20} height={22} />
                     <img src={StarOuter} alt="ícone estrela sem fundo" width={20} height={22} />
                 </span>
                 <span className="names">
-                    <p>Ellon Ma</p>
-                    <p>CEO BING CHILLING</p>
+                    <p>Priscilla</p>
+                    <p>Uma pessoa</p>
                 </span>
             </div>
+            <div className="carousel-card">
+                <img src={ProfilePictureFour} alt="Imagem perfil cliente" />
+                <span className="testimony">
+                    <p>
+                        Antes eu estava frustrado com a vida, mas depois que comprei na caco de vrido, eu comprei.
+                    </p>
+                </span>
+                <span className="rating">
+                    <img src={Star} alt="ícone estrela" width={22} height={20} />
+                    <img src={Star} alt="ícone estrela" width={22} height={20} />
+                    <img src={Star} alt="ícone estrela" width={22} height={20} />
+                    <img src={Star} alt="ícone estrela" width={22} height={20} />
+                    <img src={Star} alt="ícone estrela" width={22} height={20} />
+                </span>
+                <span className="names">
+                    <p>Homem frustrado</p>
+                    <p>Ele está frustrado</p>
+                </span>
+            </div>
+
+            <div className="carousel-card">
+                <img src={ProfilePictureFive} alt="Imagem perfil cliente" />
+                <span className="testimony">
+                    <p>
+                        Ai ai me cortei
+                    </p>
+                </span>
+                <span className="rating">
+                    <img src={Star} alt="ícone estrela" width={22} height={20} />
+                    <img src={Star} alt="ícone estrela" width={22} height={20} />
+                    <img src={Star} alt="ícone estrela" width={22} height={20} />
+                    <img src={StarOuter} alt="ícone estrela sem fundo" width={20} height={22} />
+                    <img src={StarOuter} alt="ícone estrela sem fundo" width={20} height={22} />
+                </span>
+                <span className="names">
+                    <p>Mão</p>
+                    <p>Dedo médio</p>
+                </span>
+            </div>
+            
             <div className="carousel-card">
                 <img src={ProfileImageOne} alt="Imagem perfil cliente" />
                 <span className="testimony">
@@ -255,6 +316,8 @@ export default function Home() {
 <PricingSection></PricingSection>
 <ContactSection />
 
+
+<Footer />
 
 
         </>
